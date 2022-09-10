@@ -1,4 +1,4 @@
-import MATERI_DATA from "./assets/materi.json";
+import DATA from "./assets/data.json";
 import Hero from "./components/hero/Hero";
 import HeroContainer from "./components/hero/HeroContainer";
 import SearchBox from "./components/hero/SearchBox";
@@ -18,7 +18,7 @@ export default function App() {
       </HeroContainer>
       <IllContainer>
         <Ill>
-          {MATERI_DATA.map((ill, idx) => (
+          {DATA.map((ill, idx) => (
             <IllCard {...ill} key={idx} />
           ))}
         </Ill>
